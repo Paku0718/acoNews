@@ -1,4 +1,3 @@
-//App.jsx
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Filters from './components/Filters';
@@ -19,11 +18,7 @@ const App = () => {
   const fetchNews = async () => {
     setLoading(true);
     const { category, country, lang } = filters;
-    const apiUrl = `https://aco0-news-backend-jjweo31cz-paku0718s-projects.vercel.app/`;
-
-    // console.log('Filters:', filters);
-    // console.log('API URL:', apiUrl); // Log API URL
-
+    const apiUrl = `https://aco-news-backend.vercel.app/news?q=${encodeURIComponent(query)}&category=${category}&country=${country}&lang=${lang}&page=${currentPage}&max=9`;
 
     try {
       const response = await fetch(apiUrl);
@@ -44,7 +39,6 @@ const App = () => {
 
   useEffect(() => {
     fetchNews();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, filters, currentPage]);
 
   const handleSearch = (searchQuery) => {
@@ -53,11 +47,9 @@ const App = () => {
   };
 
   const handleFilterChange = (name, value) => {
-    // console.log(`Filter changed: ${name} = ${value}`);
     setFilters((prev) => ({ ...prev, [name]: value }));
     setCurrentPage(1);
-};
-
+  };
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -69,7 +61,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col  bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       <header className="sticky top-0 z-50">
         <Header onSearch={handleSearch} onCategorySelect={handleCategorySelect} />
       </header>
@@ -81,7 +73,7 @@ const App = () => {
         <NewsFeed articles={articles} />
       )}
       <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
