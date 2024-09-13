@@ -1,6 +1,6 @@
 # acoNews
 
-![acoNews Logo](aconews-logo.png)
+![acoNews Logo](./aconews-logo.png)
 
 acoNews is a responsive news website that fetches and displays news articles from the GNews API. It provides a clean and modern interface for browsing different categories of news, including general, world, nation, business, technology, entertainment, sports, science, and health.
 
