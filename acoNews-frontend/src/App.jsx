@@ -19,7 +19,7 @@ const App = () => {
   const fetchNews = async () => {
     setLoading(true);
     const { category, country, lang } = filters;
-    const apiUrl = `http://localhost:5000/news?q=${encodeURIComponent(query)}&category=${category}&country=${country}&lang=${lang}&page=${currentPage}&max=9`;
+    const apiUrl = `https://aco0-news-backend-jjweo31cz-paku0718s-projects.vercel.app/`;
 
     // console.log('Filters:', filters);
     // console.log('API URL:', apiUrl); // Log API URL
