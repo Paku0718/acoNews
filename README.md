@@ -8,6 +8,15 @@ acoNews is a responsive news website that fetches and displays news articles fro
 - **Live Website (Hosted on Firebase):** [acoNews](https://aconews-23afc.firebaseapp.com/)
 - **GitHub Repository:** [GitHub Repo](https://github.com/Paku0718/acoNews)
 
+## Screenshots
+
+### Homepage
+![Homepage Screenshot](./homepage-screenshot.jpg)
+
+### Newsfeed
+![Newsfeed Screenshot](./newsfeed-screenshot.jpg)
+
+
 ## Table of Contents
 - [Project Setup](#project-setup)
 - [Project Overview](#project-overview)
