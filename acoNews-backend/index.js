@@ -6,10 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors({
-    origin: 'https://aconews-23afc.firebaseapp.com/', // Update with your frontend domain
-    methods: ['GET'],
-}));
+app.use(cors());
 app.use(express.json());
 
 // Base route to check if the server is running
