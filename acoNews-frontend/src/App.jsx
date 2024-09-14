@@ -18,7 +18,7 @@ const App = () => {
   const fetchNews = async () => {
     setLoading(true);
     const { category, country, lang } = filters;
-    const apiUrl = `https://aco-news-backend.vercel.app/news?q=${encodeURIComponent(query)}&category=${category}&country=${country}&lang=${lang}&page=${currentPage}&max=9`;
+    const apiUrl = `https://aconews-backend-v1zr.onrender.com/news?q=${encodeURIComponent(query)}&category=${category}&country=${country}&lang=${lang}&page=${currentPage}&max=9`;
 
     try {
       const response = await fetch(apiUrl);
