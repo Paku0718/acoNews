@@ -5,7 +5,7 @@
 acoNews is a responsive news website that fetches and displays news articles from the GNews API. It provides a clean and modern interface for browsing different categories of news, including general, world, nation, business, technology, entertainment, sports, science, and health.
 
 ## Project Links
-- **Live Website (Hosted on Firebase):** [acoNews](https://aconews-frontend.web.app/)
+- **Live Website (Hosted on Firebase):** [acoNews](https://aconews-23afc.web.app/)
 - **GitHub Repository:** [GitHub Repo](https://github.com/Paku0718/acoNews)
 
 ## Screenshots
